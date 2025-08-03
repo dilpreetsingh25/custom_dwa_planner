@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>custom_dwa_planner</name>
+  <version>0.0.0</version>
+  <description>Custom DWA controller plugin for Nav2</description>
+  <maintainer email="dsingh2_be21@thapar.edu">dilpreet</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>nav2_core</depend>
+  <depend>pluginlib</depend>
+  <depend>tf2_ros</depend>
+  <depend>nav2_util</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_2d_msgs</depend>
+
+  <!-- For YAML / Parameter parsing -->
+  <depend>rclcpp_lifecycle</depend>
+
+  <!-- For launching Python launch files -->
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <!-- For RViz -->
+  <exec_depend>rviz2</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <!-- Plugin export -->
+    <nav2_core plugin="${prefix}/plugin.xml"/>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
