@@ -51,8 +51,6 @@ ros2 launch custom_dwa_planner tb3_nav2_dwa3.launch.py
 
 In RViz:
 
-- Set initial pose using "2D Pose Estimate"
-
 - Set navigation goal using "2D Nav Goal"
 
 Parameters
